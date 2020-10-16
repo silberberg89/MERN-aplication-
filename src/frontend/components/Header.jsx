@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import gravatar from '../utils/gravatar';
 import { logoutRequest } from '../actions';
+import Search from './Search';
 import '../assets/styles/components/Header.scss';
 
 import logo from '../assets/static/logo.png';
@@ -18,10 +19,11 @@ const Header = (props) => {
 
   return (
     <header className='header'>
+
       <Link to='/'>
         <img className='header__img' src={logo} alt='Logo' />
       </Link>
-
+      <Search />
       <div className='header__menu'>
         <div className='header__menu--profile'>
           {

@@ -1,5 +1,5 @@
 .carousel-item {
-  border-radius: 20px;
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -44,6 +44,13 @@
 
 .carousel-item__details--img {
   width: 20px;
+  transition: 300ms;
+  &:first-child{
+    margin-right: 5px;
+  }
+  &:hover{
+    opacity: .8;
+  }
 }
 
 .carousel-item:hover .carousel-item__details {

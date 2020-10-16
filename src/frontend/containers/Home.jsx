@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
@@ -18,7 +17,6 @@ const Home = ({ myList, trends, originals }) => {
 
   return (
     <>
-      <Search />
       {myList.length > 0 && (
         <Categories title='Mi lista'>
           <Carousel>

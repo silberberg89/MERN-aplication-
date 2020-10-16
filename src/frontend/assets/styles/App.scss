@@ -1,13 +1,15 @@
 @import './Vars.scss';
 @import './Media.scss';
+@import './components/Input.scss';
 
 body {
-  margin: 0;
   font-family: $theme-font;
   background: $main-color;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 

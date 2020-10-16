@@ -22,7 +22,7 @@ const CarouselItem = (props) => {
   };
   return (
     <div className='carousel-item'>
-      <img className='carousel-item__img' src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt={title} />
+      <img className='carousel-item__img' src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt={title} />
       <div className='carousel-item__details'>
         <div>
           <Link to={`/palyer/${id}`}>
